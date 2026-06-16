@@ -2,7 +2,6 @@ require meta-rdk-broadband/recipes-ccsp/ccsp/ccsp_common_genericarm.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI:append = " file://0001-scripts-fix-incorrect-call-arguments-for-utopia-dhcp.patch"
 
 do_install:append () {
     # Test and Diagonastics XML 
