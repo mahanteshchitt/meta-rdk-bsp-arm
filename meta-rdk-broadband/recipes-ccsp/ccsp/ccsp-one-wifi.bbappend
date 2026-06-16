@@ -19,8 +19,6 @@ python() {
 SRC_URI:append = " \
     file://wifi_defaults.txt \
     file://onewifi_pre_start.sh \
-    file://0001-db-fix-compile-error-when-ONEWIFI_DB_SUPPORT-not-set.patch \
-    file://0002-wifi_db-fix-incorrect-type-for-index-variable.patch \
 "
 
 RDEPENDS_${PN}:append = "${@bb.utils.contains('DISTRO_FEATURES', 'EasyMesh', ' virtual/unified-wifi-mesh-personality', '', d)}"

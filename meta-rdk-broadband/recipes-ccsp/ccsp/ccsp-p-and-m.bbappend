@@ -2,11 +2,6 @@ require ccsp_common_genericarm.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/ccsp-p-and-m:"
 
-SRC_URI += "\
-        file://0001-Remove-erouter0-reference-from-Device.IP.Interface.patch \
-        file://0002-Generic-ARM-only-disable-sending-WebPA-notifications.patch \
-        file://0003-Generic-ARM-only-disable-telemetry-reporting-for-WAN.patch \
-"
 
 DEPENDS:append = " utopia curl "
 
