@@ -39,6 +39,8 @@ IMAGE_INSTALL:append = "${@bb.utils.contains('DISTRO_FEATURES', 'webpa', ' parod
 
 IMAGE_INSTALL:append = " incus-agent"
 
+IMAGE_INSTALL:append = " packagegroup-firmware-all"
+
 require image-exclude-files.inc
 
 remove_unused_file() {
